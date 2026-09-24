@@ -1,4 +1,8 @@
 
+:root {
+  --header-height: 70px;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -89,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
+  height: var(--header-height);
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s ease-in-out;
@@ -383,15 +387,38 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh);
+  aspect-ratio: 2 / 1;
+  min-height: 260px;
+  margin-top: var(--header-height);
   overflow: hidden;
   position: relative;
-  background-size: cover;
+  background: #f4f4f4;
   padding: 0;
 }
 
+.hero-media {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
 #heroCarousel {
-  flex: 0 0 85vh;
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
 }
 
 #hero .carousel-container {
@@ -401,7 +428,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   text-align: center;
   position: relative;
-  height: 85vh;
+  height: 100%;
+  min-height: 0;
 }
 
 #hero h2 {
@@ -445,9 +473,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  #hero{
-    background-size: cover;
-    background-position: center;
+  #hero {
+    aspect-ratio: 2 / 1;
   }
 
   #hero p {
@@ -459,12 +486,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #hero{
-    background-size: cover;
-    background-position: center;
+  #hero {
+    min-height: 210px;
+    margin-top: var(--header-height);
+    aspect-ratio: 2 / 1;
   }
+
+  .hero-media img {
+    object-position: center center;
+  }
+
+  #heroCarousel,
   #hero .carousel-container {
-    height: 85vh;
+    height: 100%;
+    min-height: 0;
   }
 }
 
