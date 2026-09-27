@@ -911,6 +911,51 @@ section {
   box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
 }
 
+.fabric-text-card .fabric-photo-link {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #f3f4f6;
+  margin-bottom: 18px;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.02);
+}
+
+.fabric-photo-pair {
+  margin-bottom: 18px;
+}
+
+.fabric-photo-pair-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.fabric-photo-half {
+  margin-bottom: 0;
+}
+
+.fabric-photo-half img {
+  height: 150px;
+}
+
+.fabric-text-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.fabric-text-card:hover .fabric-photo-link img,
+.fabric-text-card:focus-within .fabric-photo-link img,
+.fabric-text-card.is-active .fabric-photo-link img {
+  transform: scale(1.08);
+  filter: saturate(1.05);
+}
+
 .fabric-text-card:hover,
 .fabric-text-card:focus,
 .fabric-text-card.is-active {
@@ -1654,11 +1699,11 @@ section {
   color: #444444;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .email, .contact .info .phone, .contact .info .social-media {
   margin-top: 40px;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i, .contact .info .social-media:hover i {
   background: #008c2f;
   color: #fff;
 }
