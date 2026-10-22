@@ -1983,6 +1983,11 @@ section {
 }
 
 #footer .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
   margin: 0 0 40px 0;
 }
 
@@ -1995,7 +2000,7 @@ section {
   color: #fff;
   line-height: 1;
   padding: 0;
-  margin-right: 4px;
+  margin-right: 0;
   border-radius: 50%;
   text-align: center;
   width: 36px;
@@ -2018,6 +2023,12 @@ section {
   height: 16px;
   display: block;
   object-fit: contain;
+}
+
+#footer .social-links a.tiktok svg {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 
 #footer .social-links a:hover {
