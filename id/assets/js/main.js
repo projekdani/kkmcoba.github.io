@@ -186,10 +186,11 @@
       itemSelector: '.portfolio-item'
     });
 
+    var initialFilter = window.location.hash === '#artikel' ? '.filter-artikel' : '.filter-gallery';
     $('#portfolio-flters li').removeClass('filter-active');
-    $('#portfolio-flters li[data-filter=".filter-gallery"]').addClass('filter-active');
+    $('#portfolio-flters li[data-filter="' + initialFilter + '"]').addClass('filter-active');
     portfolioIsotope.isotope({
-      filter: '.filter-gallery'
+      filter: initialFilter
     });
 
     $('#portfolio-flters li').on('click', function() {

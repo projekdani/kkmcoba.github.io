@@ -1444,6 +1444,8 @@ section {
 
 .news-card {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -1531,6 +1533,9 @@ section {
 }
 
 .news-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 16px 16px 18px;
 }
 
@@ -1559,12 +1564,21 @@ section {
   margin: 0 0 10px;
   font-size: 18px;
   line-height: 1.45;
+  min-height: calc(1.45em * 2);
   color: #1f1f1f;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .news-card-content h4 a {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   color: #1f1f1f;
   text-decoration: none;
   transition: color 0.25s ease;
@@ -1579,7 +1593,8 @@ section {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-top: 4px;
+  margin-top: auto;
+  padding-top: 4px;
 }
 
 .news-card-author {
