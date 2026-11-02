@@ -1,0 +1,2 @@
+RewriteEngine On
+RedirectMatch 301 ^/id/(.*)$ /index.html

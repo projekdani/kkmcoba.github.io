@@ -1,0 +1,78 @@
+=================================
+Membuat Artikel
+=================================
+
+0. Pertama, siapkan foto yang ingin digunakan di assets/media.
+1. Copy Template-Articles & Template-Artikel buat backup & bisa dipakai lagi,
+   -> Rename foldernya lalu buka index.html
+2. Akan terlihat <title>Judul</title>, ganti "Judul" menjadi judul yang diinginkan.
+   Ini akan merubah judul di tab browser
+3. Lalu pada bagian Portfolio Details Section, disitu templatenya akan bekerja.
+4. Akan terlihat <!-- Ubah foto disini -->
+   ubah nama-file sesuai foto yang sudah ditaruh di assets/media(perhatikan extnya juga)
+5. Ganti judul, isi konten pada tempat yang disiapkan
+6. Save, dan artikel versi inggris sudah jadi
+   (Jangan lupa hapus)
+7. Lalukan dari step 1-6 pada template-artikel (pastikan di direktori id/artikel).
+8. Template siap digunakan.
+
+**)Jgn lupa dihapus comment(<!--Keterangan-->)nya, biar gk jelek.
+
+=================================
+Menambahkan Artikel
+=================================
+
+1. Sekarang, saatnya memperlihatkan artikel didalam page media
+2. Di folder media & id/media(ver. indo) akan terlihat index.html
+3. Scroll kebawah dan lihat comment (<!-- -->) Article, Event, dan Card, gunakan bagian Article
+4. Nah, disini ganti NamaFolderArtikel, NamaFileFoto, dan Judul yang sesuai.
+5. Lakukan dari step 3-5 pada id/media/index
+6. Article sudah siap di media
+
+**)Jgn lupa dihapus comment(<!-- -->)nya, biar gk jelek.
+
+=================================
+Membuat Event
+=================================
+0. Pertama, siapkan foto yang ingin digunakan di assets/media.
+1. Copy Template-Articles & Template-Artikel buat backup & bisa dipakai lagi,
+   -> Rename foldernya lalu buka index.html
+2. Ganti Judul di <title></title>
+3. Kita ganti NamaFileFoto.
+   Kalau adanya 1, yang lain bisa dihapus.
+   Yang sesuai ya jangan typo. perhatikan extnya juga.
+4. Ganti theme, location, detail, judul, dan isi konten.
+5. Lakukan hal yang sama di Template-Artikel (ver.indo).
+6. Template siap digunakan
+
+=================================
+Menambahkan Acara
+=================================
+
+1. Sekarang, saatnya memperlihatkan event didalam page media
+2. Di folder media & id/media(ver. indo) akan terlihat index.html
+3. Scroll kebawah dan lihat comment (<!-- -->) Article, Event, dan Card, gunakan bagian Event
+4. Nah, disini ganti NamaFolderEvent, NamaFileFoto, dan Judul yang sesuai.
+5. Lakukan dari step 3-5 pada id/media/index
+6. Article sudah siap di media
+
+**)Jgn lupa dihapus comment(<!-- -->)nya, biar gk jelek.
+
+=================================
+Menambahkan Gallery
+=================================
+
+1. Pertama, taruh foto yang diinginkan ke assets/media
+2. Di folder media & id/media(ver. indo) akan terlihat index.html
+3. Scroll kebawah dan lihat comment (<!-- -->) Article, Event, dan Card, gunakan bagian Card
+4. Nah, disini ganti NamaFileFoto, dan Judul yang sesuai.
+5. Lakukan dari step 3-5 pada id/media/index
+6. Article sudah siap di media
+
+**)Jgn lupa dihapus comment(<!-- -->)nya, biar gk jelek.
+
+
+
+
+
+
